@@ -4,6 +4,6 @@ int n=Convert.ToInt32(Console.ReadLine());
 int d;
 d=n/100%10;
 if (n<100)
-    Console.WriteLine("NO");
+Console.WriteLine("NO");
 else
-    Console.WriteLine($"{d}");
+Console.WriteLine($"{d}");
