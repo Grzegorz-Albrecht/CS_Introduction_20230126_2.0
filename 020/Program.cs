@@ -4,4 +4,4 @@ if
     (a%7==0 & a%23==0)
     Console.WriteLine($" {a} кратно 7 и 23");
 else
-    System.Console.WriteLine("NO");
+    Console.WriteLine("NO");
