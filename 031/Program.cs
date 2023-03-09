@@ -5,13 +5,13 @@ double k;
 Console.WriteLine("Число"+"\t"+"Куб");
 for (k=1; k<=N; k++)
 {
-double square=Square(k);
-Console.WriteLine(k+"\t"+square);
+double cube=Cube(k);
+Console.WriteLine(k+"\t"+cube);
 }
 
 
 
-double Square(double k)
+double Cube(double k)
 {
     return Math.Pow(k,3);
 }
