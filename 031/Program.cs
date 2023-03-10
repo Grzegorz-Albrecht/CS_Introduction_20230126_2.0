@@ -1,17 +1,21 @@
 ﻿// 31. Вывести на экран кубы чисел от 1 до N
-Console.Write("Введите N: ");
-double N=Convert.ToInt32(Console.ReadLine());
-double k;
+// Console.Write("Введите N: ");
+// int N=Convert.ToInt32(Console.ReadLine());
+int N=10;
+int k=1;
 Console.WriteLine("Число"+"\t"+"Куб");
-for (k=1; k<=N; k++)
+Console.WriteLine(Cube(k));
+
+
+
+double Cube(int k)
 {
-double cube=Cube(k);
-Console.WriteLine(k+"\t"+cube);
-}
-
-
-
-double Cube(double k)
-{
-    return Math.Pow(k,3);
+    double cube=0;
+    while (k<=N)
+    {
+        cube=Convert.ToDouble(Math.Pow(k,3));
+        Console.WriteLine(k+"\t"+cube);
+        k++;
+    }
+    return cube;
 }

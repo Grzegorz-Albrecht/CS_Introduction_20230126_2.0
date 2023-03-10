@@ -1,26 +1,21 @@
 ﻿// 30. Вывести на экран таблицу квадратов чисел от 1 до N
 // Console.Write("Введите N: ");
 // int N=Convert.ToInt32(Console.ReadLine());
-// int k=1;
-// Console.WriteLine("Число"+"\t"+"Квадрат");
-// do
-// {
-//     Console.WriteLine(k+"\t"+Math.Pow(k,2));
-//     k++;
-// }
-// while (k<=N);
-Console.Write("Введите N: ");
-double N=Convert.ToInt32(Console.ReadLine());
-double k;
+int N=10;
+int k=1;
 Console.WriteLine("Число"+"\t"+"Квадрат");
-for (k=1; k<=N; k++)
-{
-double square=Square(k);
-Console.WriteLine(k+"\t"+square);
-}
+Console.WriteLine(Square(k));
 
-double Square(double k)
 
+
+double Square(int k)
 {
-    return Math.Pow(k,2);
+    double square=0;
+    while (k<=N)
+    {
+        square=Convert.ToDouble(Math.Pow(k,2));
+        Console.WriteLine(k+"\t"+square);
+        k++;
+    }
+    return square;
 }
