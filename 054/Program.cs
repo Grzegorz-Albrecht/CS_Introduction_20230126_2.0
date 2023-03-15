@@ -1,7 +1,7 @@
 ﻿// 54.С клавиатуры вводится число N. Показать первые N чисел Фибоначчи. Принять первые числа равными 0 и 1
 System.Console.Write("Введите N: ");
 int N=int.Parse(Console.ReadLine());
-int[] a=new int[N];
+int[] a=new int[N+1];
 a[0]=0;
 a[1]=1;
 
